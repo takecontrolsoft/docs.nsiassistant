@@ -21,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'takecontrolsoft', // Usually your GitHub org/user name.
-  projectName: 'nsi_assistant_docs', // Usually your repo name.
+  projectName: 'docs.nsiassistant.github.io', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -44,14 +44,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/takecontrolsoft/nsi_assistant_docs/tree/main/docs/',
+            'https://github.com/takecontrolsoft/docs.nsiassistant.github.io/tree/main/docs/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/takecontrolsoft/nsi_assistant_docs/tree/main/blog/',
+            'https://github.com/takecontrolsoft/docs.nsiassistant.github.io/tree/main/blog/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -80,7 +80,7 @@ const config = {
           },
           {to: '/blog', label: 'Блог', position: 'left'},
           {
-            href: 'https://github.com/takecontrolsoft/nsi_assistant_docs',
+            href: 'https://github.com/takecontrolsoft/docs.nsiassistant.github.io',
             label: 'GitHub',
             position: 'right',
           },
