@@ -2,46 +2,41 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Въведение
 
-Let's discover **Docusaurus in less than 5 minutes**.
+След като добавката на браузъра е инсталирана, както е показано [тук](/docs/install), можете да я заредите от разширенията на браузъра. Тя ще се отвори в нов тесен прозорец. Можете да стесните текущия прозорец за да виждате едновременно двата прозореца.
 
-## Getting Started
+![screen plugin](img/image-6.png)
 
-Get started by **creating a new site**.
+:::warning Внимание
+Моля, уверете се че прозореца на НСИ асистента е отворен само веднъж, тъй като по време на работа може да възникне объркване в кой прозорец работите. Интегрираното контекстно меню на добавката работи едновременно с всички отворени прозорци на асистента.
+:::
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Процес на конфигуриране
 
-### What you'll need
+Процесът на конфигуриране се извършва еднократно при внедряване на системата. По време на този процес накратко се прави връзка межди полетата от отчетите на информационна система "Бизнес статистика" и клетките от вашите ексел файлове, в които са налични данните.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### Отчети
 
-## Generate a new site
+На първа страница ще намерите списък с връзки към всички отчети. Те са предварително конфигурирани. В случай, че няма да работите с някои от тях, може да ги изтриете или да добавите други ако липсват.
+Връзката на всеки отчет води до страница с полетата на отчета.
 
-Generate a new Docusaurus site using the **classic template**.
+![screen plugin](img/image-6.png)
 
-The classic template will automatically be added to your project after you run the command:
+### Полета на отчета
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+Полетата на отчета, също са предварително конфигурирани, но вие може да си добавяте нови, като използвате контекстното меню (с десен бутон) върху страницата на информационна система "Бизнес статистика" или да изтривате ненужните като ги маркирате с бутончето с кошче пред всяко поле и запазите промените.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+![fields](img/image-7.png)
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+За да добавите нови: кликнете с десен бутон върху полето и извебере от падащото меню опция **"Добави поле"**
+За всяко от полетата можете да добавите името на колона или клетка от ексел файл, от която ще се взимат данните при стартиране на автоматичното попълване на отчетите. Файловете се избират при стартиране на този процев, за да се разреши достъп за четене до тях.
+![context menu](img/image-5.png)
 
-## Start your site
+## Автоматично попълване на отчетите
 
-Run the development server:
+Бутонът за стартиране на тази операция се намира най-долу в прозореца на НСИ асистента. Този бутон отваря диалог за избот на ексел файловете с данните, като първо е необходимо да се зареди списъка с респонденти и техните данни по колони, и след това можете да заредите много файлове с финансови данни за фирмите, за които желаете да подавате отчети.
 
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+:::info ЗАБЕЛЕЖКА 
+*Този процес следва да бъде описан подробно в следващите страници.*
+:::
