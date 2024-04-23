@@ -16,12 +16,12 @@ const config = {
   url: 'https://nsiwebassistant.azurewebsites.net/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/docs.nsiassistant',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'takecontrolsoft', // Usually your GitHub org/user name.
-  projectName: 'docs.nsiassistant.github.io', // Usually your repo name.
+  projectName: 'docs.nsiassistant', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -44,14 +44,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/takecontrolsoft/docs.nsiassistant.github.io/tree/main/docs/',
+            'https://github.com/takecontrolsoft/docs.nsiassistant/tree/main/docs/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/takecontrolsoft/docs.nsiassistant.github.io/tree/main/blog/',
+            'https://github.com/takecontrolsoft/docs.nsiassistant/tree/main/blog/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -80,7 +80,7 @@ const config = {
           },
           {to: '/blog', label: 'Блог', position: 'left'},
           {
-            href: 'https://github.com/takecontrolsoft/docs.nsiassistant.github.io',
+            href: 'https://github.com/takecontrolsoft/docs.nsiassistant',
             label: 'GitHub',
             position: 'right',
           },
