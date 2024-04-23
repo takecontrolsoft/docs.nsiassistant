@@ -23,6 +23,7 @@ function HomepageHeader() {
             Въведение - 5мин ⏱️
           </Link>
         </div>
+        <a className={styles.linkIS} href="https://isbs.nsi.bg" target='_blank'>Информационна система "Бизнес статистика" - isbs.nsi.bg</a>
       </div>
     </header>
   );
