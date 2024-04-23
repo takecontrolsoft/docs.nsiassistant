@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'НСИ асистент',
-  tagline: 'Помощник за подаване на годишни отчети към Националния статистически институт',
+  title: 'Описание на НСИ асистент',
+  tagline: 'Помощник за подаване на годишни отчети към Националния статистически институт през информационна система "Бизнес статистика"',
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here

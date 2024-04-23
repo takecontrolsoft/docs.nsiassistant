@@ -4,32 +4,35 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Лесен за работа',
+    Svg: require('@site/static/img/easytouse.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        НСИ асистента е интуитивен и не изисква специфични
+        познания за инсталиране, поддръжка и работа с него.
+        Той се закача лесно за браузъра и въвежда данните вместо вас.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Гъвкав към промени',
+    Svg: require('@site/static/img/settingslist.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        НСИ асистента предоставя лесен и удобен потребителски интерфейс
+        за конфигуриране на полетата от справките на информационна 
+        система "Бизнес статистика".
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Мулти платформен',
+    Svg: require('@site/static/img/multiplatforms.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        НСИ асистент е добавка към браузъра. 
+        Работи на Chrome, Edge, FireFox, Sfari.
+        Може да се използва с десктоп операционни системи Windows, Mac, Linux.
       </>
     ),
   },
