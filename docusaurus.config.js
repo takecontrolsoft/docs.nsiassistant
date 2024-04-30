@@ -98,7 +98,7 @@ const config = {
               },
               {
                 label: 'Инсталиране',
-                to: '/docs/install',
+                to: '/docs.nsiassistant/docs/category/инсталиране',
               },
             ],
           },
