@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Инсталиране
+# От пакетиран (Zip) файл
 
 НСИ асистент е добавка към браузъра. 
 
@@ -10,46 +10,30 @@ sidebar_position: 1
         
 Може да се използва с десктоп операционни системи Windows, Mac, Linux.
 
-## Инсталиране от добавките на браузъра
+## Инсталиране от пакетиран файл
 
 ```mdx-code-block
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import styles from '../doc.module.css';
+import Link from '@docusaurus/Link';
 ```
-
-```mdx-code-block
-<Tabs>
-  <TabItem value="chrome" label="Chrome" default>
-    ### Добавяне към Chrome
-    - [Линк на Chrome добавка](https://chromewebstore.google.com/detail/%D0%BD%D1%81%D0%B8-%D0%B0%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BD%D1%82/lnhjfeeeibjnkbfcemfpoekhkfnpbobo)
-
-    ![Chrome extension screen](img/image.png)
-
-  </TabItem>
-  <TabItem value="edge" label="Edge">
-    - Очаква се одобрение на добавката
-  </TabItem>
-  <TabItem value="firefox" label="FireFox">
-    ### Добавяне към FireFox
-    - Очаква се одобрение на добавката
-  </TabItem>
-   <TabItem value="safari" label="Safari">
-    ### Добавяне към Safari
-    - Очаква се одобрение на добавката
-  </TabItem>
-</Tabs>
-```
-
-## Инсталиране от пакетиран файл
 
 :::warning НЕПРЕПОРЪЧИТЕЛНО
 *Този начин на инсталиране не се препоръчва, може да го изполвате само, в случай че новата версия на добавката все още не е преминала процеса на одобряване, който се извършва от страна на хранилищата за добавки на съответния браузър.*
 :::
 
+export const Button = ({children}) => (
+    <div className={styles.buttons}>
+      <Link className="button button--primary button--lg"
+        to="https://nsiwebassistant.azurewebsites.net/nsiAddOn.zip">{children}
+      </Link>
+    </div>
+);
+
 ### Свалете и разархивирайте
   - файла с пакета на добавката ще намерите на посочения линк:
-[nsiAssistant.zip](https://nsiwebassistant.azurewebsites.net/nsiAddOn.zip)
-
+<Button>ИЗТЕГЛИ</Button>
 
 ```mdx-code-block
 <Tabs>
