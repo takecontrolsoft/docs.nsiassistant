@@ -31,7 +31,7 @@ const FeatureList = [
     description: (
       <>
         НСИ асистент е добавка към браузъра. 
-        Работи на Chrome, Edge, FireFox, Sfari.
+        Работи на Chrome, Edge, FireFox, Safari.
         Може да се използва с десктоп операционни системи Windows, Mac, Linux.
       </>
     ),
