@@ -24,9 +24,18 @@ jobs:
           node-version: 18
           cache: yarn
           cache-dependency-path: './package-lock.json'
-  
+
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "baseUrl: '/docs.nsiassistant'"
+          replace: "baseUrl: '/'"
+          include: "docusaurus.config.js"
+          regex: false
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+
       - name: Build website
         run: yarn build
 
