@@ -107,7 +107,7 @@ const config = {
             items: [
               {
                 label: 'Take control - SI',
-                href: 'https://takecontrolsoft.eu/',
+                href: 'https://takecontrolsoft.eu/bg',
               },
               {
                 label: 'Linked In',
