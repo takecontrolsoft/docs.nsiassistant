@@ -18,9 +18,9 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Въведение - 5мин ⏱️
+            className="button button--warning button--lg"
+            to="https://nsiassistant.bg">
+            Към НСИ Асистента
           </Link>
         </div>
         <a className={styles.linkIS} href="https://isbs.nsi.bg" target='_blank'>Информационна система "Бизнес статистика" - isbs.nsi.bg</a>
