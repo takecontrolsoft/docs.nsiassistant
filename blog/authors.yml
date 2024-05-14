@@ -1,5 +1,10 @@
 takecontrolsoft:
   name: Тейк контрол - софтуер и инфраструктура ЕООД
   title: Собственик и разработчик
-  url: https://takecontrolsoft.eu/
+  url: https://takecontrolsoft.eu/bg
   image_url: https://avatars.githubusercontent.com/u/149889940?s=200&v=4
+netpartner:
+  name: Нет Партнер
+  title: Маркетинг, дизайн и програмиране
+  url: https://netpartner.bg/
+  image_url: https://netpartner.bg/wp-content/uploads/2024/01/logo_final_netpartner_sin_fono.png

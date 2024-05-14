@@ -1,0 +1,56 @@
+.sib_class_28_black_reg {
+    color: #434343;
+    font-family: Arial;
+    font-size: 28px;
+    word-break: break-word
+}
+.default-heading1 {
+    color: #434343;
+    font-family: Arial Black, arial;
+    font-size: 50px;
+    word-break: break-word
+}
+
+.default-button{
+    font-style: normal; 
+    font-weight: bold; 
+    line-height: 1.15; 
+    text-decoration: none;
+    word-break: break-word;
+    border-style: solid; 
+    word-wrap: break-word;
+    display: block;
+    -webkit-text-size-adjust: none; 
+    background-color: #842029;
+    border-bottom-width: 0px; 
+    border-color: #842029; 
+    border-left-width: 0px; 
+    border-radius: 25px; 
+    border-right-width: 0px; 
+    border-top-width: 0px;
+    color: #ffffff; 
+    font-family: Arial; font-size: 20px; height: 53px; 
+    padding:12px;
+}
+.default-button:hover{    
+    color: #ffffff!important; 
+}                                                     
+.div-button {
+    color: #3f3d56!important; 
+    font-family: Arial; font-size: 20px; 
+    line-height: 1.4; 
+    word-break: break-word;
+    padding:10px!important;
+}
+
+.r26-i {
+    text-align: center !important
+}
+
+.nl2go-default-textstyle {
+    color: #3f3d56;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 1.4;
+    word-break: break-word
+}
