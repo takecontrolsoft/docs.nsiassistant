@@ -47,7 +47,12 @@ const config = {
             'https://github.com/takecontrolsoft/docs.nsiassistant/tree/main/docs/',
         },
         blog: {
-          showReadingTime: true,
+          blogTitle: 'НСИ Асистент блог',
+          blogDescription: 'Какво ново в НСИ Асистент?',
+          postsPerPage: 'ALL',
+          blogSidebarTitle: 'Публикации',
+          blogSidebarCount: 'ALL',
+          showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
