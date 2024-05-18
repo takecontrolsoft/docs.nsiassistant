@@ -5,3 +5,9 @@
   justify-content: center;
   margin: 20px;
 }
+
+img[alt="new-registration"] { 
+  max-width:  450px; 
+  display: block;
+  align-self: center;
+}
