@@ -4,48 +4,50 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Лесен за работа',
-    Svg: require('@site/static/img/easytouse.svg').default,
+    title: 'Инсталиране',
+    Svg: require('@site/static/img/installation.svg').default,
     description: (
       <>
-        НСИ асистента е интуитивен и не изисква специфични
-        познания за инсталиране, поддръжка и работа с него.
-        Той се закача лесно за браузъра и въвежда данните вместо вас.
+        Как да инсталирам добавката към браузъра?
+        Как да премина към по-нова версия?
+        Как да премахна разширението от браузъра?
       </>
     ),
+    link: "./docs/install/install_extension"
   },
   {
-    title: 'Гъвкав към промени',
-    Svg: require('@site/static/img/settingslist.svg').default,
+    title: 'Инструкции и Указания',
+    Svg: require('@site/static/img/usermanual.svg').default,
     description: (
       <>
-        НСИ асистента предоставя лесен и удобен потребителски интерфейс
-        за конфигуриране на полетата от справките на информационна 
-        система "Бизнес статистика".
+        Какво е НСИ асистента? Как да го конфигурирам?
+        Какви са изискванията към файлове за импорт?
       </>
     ),
+    link: "./docs/intro"
   },
   {
-    title: 'Мулти платформен',
-    Svg: require('@site/static/img/multiplatforms.svg').default,
+    title: 'Постове и новини',
+    Svg: require('@site/static/img/blog.svg').default,
     description: (
       <>
-        НСИ асистент е добавка към браузъра. 
-        Работи на Chrome, Edge, FireFox, Safari.
-        Може да се използва с десктоп операционни системи Windows, Mac, Linux.
+        Какви са подобренията в НСИ Асистент? 
+        Има ли нови видеа? 
+        Какво ново е добавено в документацията?
       </>
     ),
+    link: "./blog"
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, description, link}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+      <a href={link}><Svg className={styles.featureSvg} role="img" /></a> 
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+       <a href={link}><Heading as="h3">{title}</Heading></a> 
         <p>{description}</p>
       </div>
     </div>

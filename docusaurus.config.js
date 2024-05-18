@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Описание на НСИ асистент',
-  tagline: 'Помощник за подаване на годишни отчети към Националния статистически институт през информационна система "Бизнес статистика"',
+  tagline: 'Помощник за подаване на ГФО към Националния Статистически Институт',
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
@@ -61,6 +61,11 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: {
+          trackingID: 'G-1QXC2F5M77',
+          anonymizeIP: true,
+        },
+       
       }),
     ],
   ],
@@ -144,3 +149,4 @@ const config = {
 };
 
 export default config;
+

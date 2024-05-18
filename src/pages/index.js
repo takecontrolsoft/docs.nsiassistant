@@ -10,20 +10,20 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero hero--secondary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <a className={styles.linkIS} href="https://isbs.nsi.bg" target='_blank'>през Информационна система "Бизнес статистика" - isbs.nsi.bg</a>
         <div className={styles.buttons}>
           <Link
-            className="button button--warning button--lg"
+            className="button button--primary button--lg"
             to="https://nsiassistant.bg">
             Към НСИ Асистента
           </Link>
         </div>
-        <a className={styles.linkIS} href="https://isbs.nsi.bg" target='_blank'>Информационна система "Бизнес статистика" - isbs.nsi.bg</a>
       </div>
     </header>
   );
