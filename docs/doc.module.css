@@ -7,7 +7,5 @@
 }
 
 img[alt="new-registration"] { 
-  max-width:  450px; 
-  display: block;
-  align-self: center;
+  max-width:  350px;
 }
