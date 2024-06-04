@@ -68,8 +68,11 @@ import ReactPlayer from 'react-player'
 
 #### Може да видите примерно конфигуриране в следното видео:
 
-<ReactPlayer playing controls url='https://www.youtube.com/watch?v=CfqKvcvAn8s' />
+<ReactPlayer playing controls url='https://www.youtube.com/watch?v=GDoq7elsFEA' />
 
+#### За по финно настройване и повече опции вижте следното видео:
+
+<ReactPlayer playing controls url='https://www.youtube.com/watch?v=CfqKvcvAn8s' />
 
 #### А тук може да видите как работят ваши колеги с повече справки.
 
