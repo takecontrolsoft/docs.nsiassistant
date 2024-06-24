@@ -21,3 +21,4 @@ $ npm run serve
 
 За хостване на GitHub pages командата е 
 `gh-pages` main.
+
