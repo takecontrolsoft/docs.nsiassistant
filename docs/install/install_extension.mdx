@@ -26,7 +26,15 @@ export const ButtonChrome = ({children, link}) => (
     </div>
 );
 
+export const ButtonEdge = ({children, link}) => (
+    <div className={styles.buttons}>
+      <Link className="button button--primary button--lg"
+        to="https://microsoftedge.microsoft.com/addons/detail/%D0%BD%D1%81%D0%B8-%D0%B0%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BD%D1%82/fbgbanbkncdiogjbmlangpnenlignkfg">{children}
+      </Link>
+    </div>
+);
 ```mdx-code-block
+
 <Tabs>
   <TabItem value="chrome" label="Chrome" default>
     ### Добавяне към Chrome
@@ -35,13 +43,21 @@ export const ButtonChrome = ({children, link}) => (
 
     ![Chrome extension screen](img/image.png)
 
+    Инсталираната добавка вече е достъпна през разширенията на браузъра:
+    ![Extension chrome](img/image-3.png)
+  </TabItem>
+
+  <TabItem value="edge" label="Edge">
+    ### Добавяне към Edge
+
+    <ButtonEdge>ИНСТАЛИРАЙ</ButtonEdge>
+   
+    ![Edge extension screen](img/image-5.png)
 
     Инсталираната добавка вече е достъпна през разширенията на браузъра:
-    ![Extension](img/image-3.png)
+    ![Extension edge](img/image-6.png)
   </TabItem>
-  <TabItem value="edge" label="Edge">
-    - Очаква се одобрение на добавката
-  </TabItem>
+
   <TabItem value="firefox" label="FireFox">
     ### Добавяне към FireFox
     - Ще бъде предоставена в следващите версии на продукта.
