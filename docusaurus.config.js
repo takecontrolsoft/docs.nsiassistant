@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/takecontrolsoft/docs.nsiassistant/tree/main/docs/',
+            'https://github.com/takecontrolsoft/docs.nsiassistant/tree/main/',
         },
         blog: {
           blogTitle: 'НСИ Асистент блог',
@@ -56,7 +56,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/takecontrolsoft/docs.nsiassistant/tree/main/blog/',
+            'https://github.com/takecontrolsoft/docs.nsiassistant/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
