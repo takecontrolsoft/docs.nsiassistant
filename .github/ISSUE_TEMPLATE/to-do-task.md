@@ -1,14 +1,14 @@
 ---
 name: To Do Task
-about: Describe this task and it's purpose here.
+about: Describe this task and its purpose here.
 title: ''
 labels: task
 assignees: desistefanova
 
 ---
 
-**Task description:**
+**Описание:**
 
-**Link the location in GitHub:**
+**Място в GitHub:**
 
-**Useful links, examples or documentation:**
+**Полезни връзки, примери и документация:**
