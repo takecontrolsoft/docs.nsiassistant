@@ -7,20 +7,22 @@ assignees: desistefanova
 
 ---
 
-**Bug description (actual behavior):**
+**Описание:**
 
 
-**Steps to reproduce:**
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**Стъпки:**
+1. Отвори: '...'
+2. Натисни '....'
 
-**Expected behavior:**
 
-**Screenshots:**
+**Очакван резултат:**
 
-**Installation environment:**
- - NopCommerce version [e.g. 0.0.1+alpha]
- - OS: [e.g. iOS]
- - Version [e.g. 22]
+
+**Реален резултат:**
+
+
+**Картинки:**
+
+
+**Забележки:**
+
