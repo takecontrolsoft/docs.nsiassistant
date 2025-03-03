@@ -21,15 +21,21 @@ import Link from '@docusaurus/Link';
 export const ButtonChrome = ({children, link}) => (
     <div className={styles.buttons}>
       <Link className="button button--primary button--lg"
-        to="https://chromewebstore.google.com/detail/%D0%BD%D1%81%D0%B8-%D0%B0%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BD%D1%82/lnhjfeeeibjnkbfcemfpoekhkfnpbobo">{children}
+        to="https://chromewebstore.google.com/detail/нси-асистент/lnhjfeeeibjnkbfcemfpoekhkfnpbobo">{children}
       </Link>
     </div>
 );
-
+export const ButtonChromeWin7 = ({children, link}) => (
+    <div className={styles.buttons}>
+      <Link className="button button--secondary button--lg"
+        to="https://chromewebstore.google.com/detail/нси-асистент-win7/nbfgmdpkpnmgdnacfbelckjagaomehef">{children}
+      </Link>
+    </div>
+);
 export const ButtonEdge = ({children, link}) => (
     <div className={styles.buttons}>
       <Link className="button button--primary button--lg"
-        to="https://microsoftedge.microsoft.com/addons/detail/%D0%BD%D1%81%D0%B8-%D0%B0%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BD%D1%82/fbgbanbkncdiogjbmlangpnenlignkfg">{children}
+        to="https://microsoftedge.microsoft.com/addons/detail/нси-асистент/fbgbanbkncdiogjbmlangpnenlignkfg">{children}
       </Link>
     </div>
 );
@@ -39,7 +45,10 @@ export const ButtonEdge = ({children, link}) => (
   <TabItem value="chrome" label="Chrome" default>
     ### Добавяне към Chrome
 
-    <ButtonChrome>ИНСТАЛИРАЙ</ButtonChrome>
+    <ButtonChrome>ИНСТАЛИРАЙ НСИ АСИСТЕНТ</ButtonChrome>
+    Ако работите на Windows 7 с по-стар браузър ви препоръчваме да изтеглите добавката от бутона по-долу:
+    
+     <ButtonChromeWin7>НСИ Асистент за Windows 7</ButtonChromeWin7>
 
     ![Chrome extension screen](img/image.png)
 
