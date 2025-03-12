@@ -6,7 +6,7 @@ sidebar_position: 1
 
 НСИ асистент е добавка от хранилището на браузъра. 
 
-Работи на Chrome, Edge, FireFox, Sfari.
+Работи на Chrome, Edge.
         
 Може да се използва с десктоп операционни системи Windows, Mac, Linux.
 
@@ -39,6 +39,13 @@ export const ButtonEdge = ({children, link}) => (
       </Link>
     </div>
 );
+export const ButtonEdgeWin7 = ({children, link}) => (
+    <div className={styles.buttons}>
+      <Link className="button button--primary button--lg"
+        to="https://microsoftedge.microsoft.com/addons/detail/нси-асистент-win7/ddbklbopfmilbpbkjbmlpbjcpghlnkfa">{children}
+      </Link>
+    </div>
+);
 ```mdx-code-block
 
 <Tabs>
@@ -52,28 +59,22 @@ export const ButtonEdge = ({children, link}) => (
 
     ![Chrome extension screen](img/image.png)
 
-    Инсталираната добавка вече е достъпна през разширенията на браузъра:
-    ![Extension chrome](img/image-3.png)
   </TabItem>
 
   <TabItem value="edge" label="Edge">
     ### Добавяне към Edge
 
-    <ButtonEdge>ИНСТАЛИРАЙ</ButtonEdge>
+    <ButtonEdge>ИНСТАЛИРАЙ НСИ АСИСТЕНТ</ButtonEdge>
+    Ако работите на Windows 7 с по-стар браузър ви препоръчваме да изтеглите добавката от бутона по-долу:
+    
+     <ButtonChromeWin7>НСИ Асистент за Windows 7</ButtonChromeWin7>
    
     ![Edge extension screen](img/image-5.png)
+   
+  </TabItem>
+  
+</Tabs>
 
     Инсталираната добавка вече е достъпна през разширенията на браузъра:
     ![Extension edge](img/image-6.png)
-  </TabItem>
-
-  <TabItem value="firefox" label="FireFox">
-    ### Добавяне към FireFox
-    - Ще бъде предоставена в следващите версии на продукта.
-  </TabItem>
-   <TabItem value="safari" label="Safari">
-    ### Добавяне към Safari
-    - Ще бъде предоставена в следващите версии на продукта.
-  </TabItem>
-</Tabs>
 ```
