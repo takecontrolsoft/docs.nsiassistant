@@ -2,7 +2,7 @@
   "label": "Промени 2025 г.",
   "position": 7,
   "link": {
-    "type": "generated-index",
-    "description": "Тук са описани промените по отчетите за 2025 г. спрямо тези за 2024 г."
+    "type": "doc",
+    "id": "changes2025"
   }
 }
