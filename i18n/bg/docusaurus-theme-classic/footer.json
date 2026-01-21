@@ -1,0 +1,70 @@
+{
+  "link.title.Документация": {
+    "message": "Документация",
+    "description": "Заглавие на колона с линкове във футъра"
+  },
+  "link.title.Продукт": {
+    "message": "Продукт",
+    "description": "Заглавие на колона с линкове във футъра"
+  },
+  "link.title.Ресурси": {
+    "message": "Ресурси",
+    "description": "Заглавие на колона с линкове във футъра"
+  },
+  "link.title.Компания": {
+    "message": "Компания",
+    "description": "Заглавие на колона с линкове във футъра"
+  },
+  "link.item.label.Въведение": {
+    "message": "Въведение",
+    "description": "Линк към въведението"
+  },
+  "link.item.label.Ръководство": {
+    "message": "Ръководство",
+    "description": "Линк към ръководството"
+  },
+  "link.item.label.Инсталиране": {
+    "message": "Инсталиране",
+    "description": "Линк към инсталиране"
+  },
+  "link.item.label.НСИ Асистент": {
+    "message": "НСИ Асистент",
+    "description": "Линк към НСИ Асистент"
+  },
+  "link.item.label.Онлайн магазин": {
+    "message": "Онлайн магазин",
+    "description": "Линк към онлайн магазина"
+  },
+  "link.item.label.Видеа": {
+    "message": "Видеа",
+    "description": "Линк към видеата в YouTube"
+  },
+  "link.item.label.Видео уроци": {
+    "message": "Видео уроци",
+    "description": "Линк към видео уроците"
+  },
+  "link.item.label.ИС Бизнес Статистика": {
+    "message": "ИС Бизнес Статистика",
+    "description": "Линк към ИС Бизнес Статистика"
+  },
+  "link.item.label.НСИ": {
+    "message": "НСИ",
+    "description": "Линк към Националния статистически институт"
+  },
+  "link.item.label.takecontrolsoft.eu": {
+    "message": "takecontrolsoft.eu",
+    "description": "Линк към сайта на компанията"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "Линк към LinkedIn профила"
+  },
+  "link.item.label.Контакти": {
+    "message": "Контакти",
+    "description": "Линк към страницата за контакти"
+  },
+  "copyright": {
+    "message": "© 2026 \"Тейк Контрол - Софтуер и Инфраструктура\" ЕООД. Всички права запазени.",
+    "description": "Авторски права във футъра"
+  }
+}

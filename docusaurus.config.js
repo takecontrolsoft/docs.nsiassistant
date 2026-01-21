@@ -8,12 +8,12 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Описание на НСИ асистент',
-  tagline: 'Помощник за подаване на ГФО към Националния Статистически Институт',
+  title: 'НСИ Асистент - Документация',
+  tagline: 'Автоматизирано попълване на ГФО към НСИ. Спестява време и усилия при подаване на годишни финансови отчети.',
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
-  url: 'https://doc.nsiassistant.bg/',
+  url: 'https://doc.nsiassistant.bg',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -25,6 +25,70 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+
+  // SEO and meta tags
+  headTags: [
+    // Open Graph / Facebook
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:type',
+        content: 'website',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:site_name',
+        content: 'НСИ Асистент',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:locale',
+        content: 'bg_BG',
+      },
+    },
+    // Twitter Card
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+    },
+    // Additional SEO
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'keywords',
+        content: 'НСИ, НСИ Асистент, ГФО, годишни финансови отчети, статистика, автоматизация, бизнес статистика, счетоводство, България',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'author',
+        content: 'Тейк Контрол - Софтуер и Инфраструктура ЕООД',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'robots',
+        content: 'index, follow',
+      },
+    },
+    // Canonical link
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'canonical',
+        href: 'https://doc.nsiassistant.bg',
+      },
+    },
+  ],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -41,23 +105,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/takecontrolsoft/docs.nsiassistant/tree/main/',
         },
-        blog: {
-          blogTitle: 'НСИ Асистент блог',
-          blogDescription: 'Какво ново в НСИ Асистент?',
-          postsPerPage: 'ALL',
-          blogSidebarTitle: 'Публикации',
-          blogSidebarCount: 'ALL',
-          showReadingTime: false,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/takecontrolsoft/docs.nsiassistant/tree/main/',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -65,34 +114,64 @@ const config = {
           trackingID: 'G-1QXC2F5M77',
           anonymizeIP: true,
         },
-       
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'videos',
+        path: 'videos',
+        routeBasePath: 'videos',
+        sidebarPath: './sidebarsVideos.js',
+        editUrl: undefined,
+      },
     ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/nsi-card.png',
+      // Social card image for Open Graph and Twitter
+      image: 'img/social-card.png',
+      metadata: [
+        {name: 'description', content: 'Документация за НСИ Асистент - автоматизирано попълване на годишни финансови отчети към Националния статистически институт'},
+        {property: 'og:description', content: 'Спестява време и усилия при подаване на ГФО. Ръководство за инсталиране, конфигуриране и използване.'},
+      ],
       navbar: {
-        title: 'НСИ асистент',
+        title: 'НСИ Асистент',
         logo: {
-          alt: 'НСИ асистент лого',
-          src: 'img/logo.svg',
+          alt: 'НСИ Асистент',
+          src: 'img/favicon.png',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: '/docs/intro',
+            label: 'Ръководство',
             position: 'left',
-            label: 'Указания',
+            className: 'navbar__item--styled',
           },
-          {to: '/blog', label: 'Блог', position: 'left'},
           {
-            href: 'https://github.com/takecontrolsoft/docs.nsiassistant',
-            label: 'GitHub',
+            type: 'docSidebar',
+            sidebarId: 'videosSidebar',
+            docsPluginId: 'videos',
+            label: 'Видеа',
+            position: 'left',
+            className: 'navbar__item--styled',
+          },
+          {
+            href: 'https://nsiassistant.bg/WelcomePage',
+            label: 'Започни',
             position: 'right',
+            className: 'navbar__item--styled navbar__item--highlighted',
           },
         ],
       },
@@ -100,11 +179,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Описание',
+            title: 'Документация',
             items: [
               {
-                label: 'Указания',
+                label: 'Въведение',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Ръководство',
+                to: '/docs/guide',
               },
               {
                 label: 'Инсталиране',
@@ -113,33 +196,58 @@ const config = {
             ],
           },
           {
-            title: 'Връзки',
+            title: 'Продукт',
             items: [
               {
-                label: 'Take control - SI',
-                href: 'https://takecontrolsoft.eu/bg',
+                label: 'НСИ Асистент',
+                href: 'https://nsiassistant.bg',
               },
               {
-                label: 'Linked In',
-                href: 'https://www.linkedin.com/company/take-control-si',
+                label: 'Онлайн магазин',
+                href: 'https://products.takecontrolsoft.eu/nsi-assistant',
+              },
+              {
+                label: 'Видеа',
+                href: 'https://www.youtube.com/@nsiassistant/videos',
               },
             ],
           },
           {
-            title: 'Разработка',
+            title: 'Ресурси',
             items: [
               {
-                label: 'Новости',
-                to: '/blog',
+                label: 'Видео уроци',
+                href: 'https://www.youtube.com/@nsiassistant',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/takecontrolsoft',
+                label: 'ИС Бизнес Статистика',
+                href: 'https://isbs.nsi.bg',
+              },
+              {
+                label: 'НСИ',
+                href: 'https://nsi.bg',
+              },
+            ],
+          },
+          {
+            title: 'Компания',
+            items: [
+              {
+                label: 'takecontrolsoft.eu',
+                href: 'https://takecontrolsoft.eu/bg',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/take-control-si',
+              },
+              {
+                label: 'Контакти',
+                to: '/docs/guide/contacts',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} NSI Assistant, Inc. Built with Docusaurus.`,
+        copyright: `© ${new Date().getFullYear()} "Тейк Контрол - Софтуер и Инфраструктура" ЕООД. Всички права запазени.`,
       },
       prism: {
         theme: prismThemes.github,

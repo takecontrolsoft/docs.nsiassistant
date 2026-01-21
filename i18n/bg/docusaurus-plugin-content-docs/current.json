@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Ръководство": {
+    "message": "Ръководство",
+    "description": "The label for category Ръководство in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Инсталиране": {
+    "message": "Инсталиране",
+    "description": "The label for category Инсталиране in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Инсталиране.link.generated-index.description": {
+    "message": "Как да инсталирате добавката към браузъра? Начини за инсталиране.",
+    "description": "The generated-index page description for category Инсталиране in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Видове полета": {
+    "message": "Видове полета",
+    "description": "The label for category Видове полета in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Видове полета.link.generated-index.description": {
+    "message": "Тук са описани различните видовете полета на отчетите и как да подаваме данни за тях.",
+    "description": "The generated-index page description for category Видове полета in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Промени 2024 г.": {
+    "message": "Промени 2024 г.",
+    "description": "The label for category Промени 2024 г. in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Промени 2024 г..link.generated-index.description": {
+    "message": "Тук са описани промените по отчетите за 2024 г. спрямо тези за 2023 г.",
+    "description": "The generated-index page description for category Промени 2024 г. in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Нови изследвания": {
+    "message": "Нови изследвания",
+    "description": "The label for category Нови изследвания in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Нови кодове по справки": {
+    "message": "Нови кодове по справки",
+    "description": "The label for category Нови кодове по справки in sidebar tutorialSidebar"
+  }
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0eb655"/>
+      <stop offset="100%" style="stop-color:#00c853"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="56" fill="url(#logoGrad)"/>
+
+  <!-- Document icon -->
+  <rect x="35" y="25" width="40" height="52" rx="4" fill="white"/>
+
+  <!-- Document fold -->
+  <path d="M65 25 L75 35 L65 35 Z" fill="#e0e0e0"/>
+
+  <!-- Lines on document -->
+  <rect x="42" y="42" width="26" height="4" rx="2" fill="#0eb655"/>
+  <rect x="42" y="52" width="20" height="4" rx="2" fill="#99f7be"/>
+  <rect x="42" y="62" width="23" height="4" rx="2" fill="#99f7be"/>
+
+  <!-- Checkmark circle -->
+  <circle cx="75" cy="75" r="18" fill="white"/>
+  <circle cx="75" cy="75" r="14" fill="#0eb655"/>
+
+  <!-- Checkmark -->
+  <path d="M68 75 L73 80 L83 70" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

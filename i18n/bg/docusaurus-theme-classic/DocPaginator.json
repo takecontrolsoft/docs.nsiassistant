@@ -1,0 +1,14 @@
+{
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Навигация в документацията",
+    "description": "ARIA етикет за навигацията в документите"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Предишна",
+    "description": "Етикет за навигация към предишния документ"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Следваща",
+    "description": "Етикет за навигация към следващия документ"
+  }
+}

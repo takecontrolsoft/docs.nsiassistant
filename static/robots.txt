@@ -1,0 +1,15 @@
+# robots.txt for doc.nsiassistant.bg
+# НСИ Асистент - Документация
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://doc.nsiassistant.bg/sitemap.xml
+
+# Disallow admin/internal paths
+Disallow: /search
+Disallow: /*.json$
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1

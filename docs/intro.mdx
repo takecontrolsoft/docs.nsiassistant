@@ -1,0 +1,152 @@
+---
+sidebar_position: 1
+title: Въведение
+description: Официална документация на НСИ Асистент - браузърна добавка за автоматизирано попълване на годишни финансови отчети в ИС Бизнес Статистика
+---
+
+# НСИ Асистент
+
+<div style={{display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1.5rem'}}>
+  <span className="badge badge--official">Официална документация</span>
+  <span className="badge badge--nsi">Интеграция с НСИ</span>
+</div>
+
+**НСИ Асистент** е браузърна добавка за автоматизирано попълване на годишните финансови отчети (ГФО) в информационната система [„Бизнес Статистика"](https://isbs.nsi.bg) на Националния статистически институт.
+
+---
+
+## Общ преглед
+
+НСИ Асистент е разработен за счетоводители и финансови специалисти, които подават годишни отчети към НСИ. Системата автоматизира прехвърлянето на данни от Excel файлове към уеб формите на НСИ, като елиминира ръчното въвеждане и свързаните с него грешки.
+
+### Основни възможности
+
+| Функционалност | Описание |
+|----------------|----------|
+| **Автоматично попълване** | Директно попълване на ГФО справките в isbs.nsi.bg |
+| **Работа с Excel** | Извличане на данни от съществуващи Excel файлове |
+| **Гъвкава конфигурация** | Адаптиране към различни файлови структури без преформатиране |
+| **Локална обработка** | Данните не напускат вашето устройство |
+
+---
+
+## Системни изисквания
+
+<table className="requirements-table">
+  <thead>
+    <tr>
+      <th>Компонент</th>
+      <th>Изискване</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Браузър</strong></td>
+      <td>Google Chrome или Microsoft Edge (актуална версия)</td>
+    </tr>
+    <tr>
+      <td><strong>Операционна система</strong></td>
+      <td>Windows 7+, macOS 10.12+, Linux</td>
+    </tr>
+    <tr>
+      <td><strong>Excel файлове</strong></td>
+      <td>.xlsx, .xls формати</td>
+    </tr>
+    <tr>
+      <td><strong>Интернет връзка</strong></td>
+      <td>Необходима за достъп до isbs.nsi.bg</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## Бърз старт
+
+<div className="quick-start-step">
+  <div className="step-number">1</div>
+  <div>
+    <strong>Регистрация</strong><br/>
+    Създайте акаунт на <a href="https://nsiassistant.bg" className="external-link">nsiassistant.bg</a>
+  </div>
+</div>
+
+<div className="quick-start-step">
+  <div className="step-number">2</div>
+  <div>
+    <strong>Инсталиране</strong><br/>
+    Добавете <a href="/docs/install/install_extension">разширението</a> към вашия браузър
+  </div>
+</div>
+
+<div className="quick-start-step">
+  <div className="step-number">3</div>
+  <div>
+    <strong>Конфигуриране</strong><br/>
+    Настройте <a href="/docs/guide/configuration">връзките</a> между Excel клетките и полетата на НСИ
+  </div>
+</div>
+
+<div className="quick-start-step">
+  <div className="step-number">4</div>
+  <div>
+    <strong>Автоматично попълване</strong><br/>
+    Стартирайте <a href="/docs/guide/auto-fill">автоматичното попълване</a> на формите
+  </div>
+</div>
+
+---
+
+## Сигурност и поверителност
+
+<div className="info-card info-card--highlight">
+
+- **Локална обработка** — Всички счетоводни данни се обработват изцяло на вашето устройство
+- **Без външни сървъри** — Данните не се изпращат към трети страни
+- **Без достъп до акаунти** — Системата не изисква и не съхранява вашите идентификационни данни за НСИ
+
+</div>
+
+---
+
+## Лицензиране
+
+<div className="info-card info-card--warning">
+
+**Безплатен пробен период**
+
+При регистрация получавате **1 безплатен лиценз** за тестване на системата.
+
+</div>
+
+<div style={{textAlign: 'center', margin: '2rem 0', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--ifm-color-emphasis-300)'}}>
+  <img src="https://products.takecontrolsoft.eu/images/thumbs/0000027_TakeControlShopLogo.png" alt="TakeControl Shop" style={{height: '50px', marginBottom: '1rem', backgroundColor: 'white', padding: '0.5rem', borderRadius: '4px'}} />
+  <p style={{marginBottom: '1rem'}}>Закупуване на абонаменти</p>
+  <a
+    href="https://products.takecontrolsoft.eu/nsi-assistant"
+    className="button button--primary button--lg"
+    style={{textDecoration: 'none', backgroundColor: '#ff5821', borderColor: '#ff5821'}}
+  >
+    Към магазина
+  </a>
+</div>
+
+---
+
+## Допълнителни ресурси
+
+| Ресурс | Описание |
+|--------|----------|
+| [Пълно ръководство](/docs/guide) | Детайлни инструкции за всички функционалности |
+| [Поддържани справки](/docs/guide/supported-reports) | Списък на всички поддържани ГФО справки |
+| [Промени 2025](/docs/changes2025) | Актуални промени в справките за 2025 г. |
+| [Отстраняване на проблеми](/docs/guide/troubleshooting) | Решения на често срещани проблеми |
+| [Контакти](/docs/guide/contacts) | Техническа поддръжка и обратна връзка |
+
+---
+
+## Външни връзки
+
+- [ИС „Бизнес Статистика"](https://isbs.nsi.bg) — Официалната система на НСИ за подаване на отчети
+- [Национален статистически институт](https://nsi.bg) — Официален сайт на НСИ
+- [НСИ Асистент](https://nsiassistant.bg) — Основен сайт на продукта

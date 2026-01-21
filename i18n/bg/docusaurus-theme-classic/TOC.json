@@ -1,0 +1,10 @@
+{
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "На тази страница",
+    "description": "Етикет на бутона за сгъваемото съдържание"
+  },
+  "theme.TOCHeading.title": {
+    "message": "На тази страница",
+    "description": "Заглавие на съдържанието в страничната лента"
+  }
+}
