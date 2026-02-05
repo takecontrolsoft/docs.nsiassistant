@@ -70,7 +70,7 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               className={clsx('button button--lg', styles.primaryButton)}
-              to="https://nsiassistant.bg/WelcomePage">
+              to="https://nsiassistant.bg">
               Към НСИ Асистент
             </Link>
             <a
