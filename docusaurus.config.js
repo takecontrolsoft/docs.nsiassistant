@@ -28,6 +28,47 @@ const config = {
 
   // SEO and meta tags
   headTags: [
+    // JSON-LD structured data (schema.org)
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'НСИ Асистент - Документация',
+        url: 'https://doc.nsiassistant.bg',
+        description:
+          'Документация за НСИ Асистент - автоматизирано попълване на годишни финансови отчети към НСИ',
+        publisher: {
+          '@type': 'Organization',
+          name: 'Тейк Контрол - Софтуер и Инфраструктура ЕООД',
+          url: 'https://takecontrolsoft.eu',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://doc.nsiassistant.bg/img/favicon.png',
+          },
+        },
+        inLanguage: 'bg',
+      }),
+    },
+    // Content Security Policy
+    {
+      tagName: 'meta',
+      attributes: {
+        'http-equiv': 'Content-Security-Policy',
+        content: [
+          "default-src 'self'",
+          "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://monitordash.takecontrolsoft.eu",
+          "style-src 'self' 'unsafe-inline'",
+          "img-src 'self' data: https:",
+          "font-src 'self' data:",
+          "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://monitordash.takecontrolsoft.eu",
+          "frame-src https://www.youtube.com https://www.youtube-nocookie.com",
+        ].join('; '),
+      },
+    },
     // Open Graph / Facebook
     {
       tagName: 'meta',
@@ -58,12 +99,28 @@ const config = {
         content: 'summary_large_image',
       },
     },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:title',
+        content: 'НСИ Асистент - Документация',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:description',
+        content:
+          'Документация за НСИ Асистент - автоматизирано попълване на годишни финансови отчети към НСИ',
+      },
+    },
     // Additional SEO
     {
       tagName: 'meta',
       attributes: {
         name: 'keywords',
-        content: 'НСИ, НСИ Асистент, ГФО, годишни финансови отчети, статистика, автоматизация, бизнес статистика, счетоводство, България',
+        content:
+          'НСИ, НСИ Асистент, ГФО, годишни финансови отчети, статистика, автоматизация, бизнес статистика, счетоводство, България',
       },
     },
     {
@@ -80,14 +137,7 @@ const config = {
         content: 'index, follow',
       },
     },
-    // Canonical link
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'canonical',
-        href: 'https://doc.nsiassistant.bg',
-      },
-    },
+    // Canonical is handled automatically by Docusaurus per page — no hardcoded tag needed
   ],
 
   scripts: [
